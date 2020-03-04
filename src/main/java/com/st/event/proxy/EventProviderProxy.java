@@ -42,8 +42,6 @@ public class EventProviderProxy<T> implements InvocationHandler {
         return null;
     }
 
-
-    @UsesJava7
     private Object invokeDefaultMethod(Object proxy, Method method, Object[] args)
             throws Throwable {
         final Constructor<MethodHandles.Lookup> constructor = MethodHandles.Lookup.class
